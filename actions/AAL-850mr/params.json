@@ -1,0 +1,23 @@
+{
+    "category": "plugins",
+    "display": "Time Zone Names",
+    "fields": {
+        "AAW": {
+            "caption": "List all the timezone names in the IANA dataset.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAM": {
+            "caption": "names",
+            "is_list": true,
+            "name": "names",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

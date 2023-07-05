@@ -1,0 +1,80 @@
+{
+    "category": "plugins",
+    "display": "Parse Date Time String",
+    "fields": {
+        "AAD": {
+            "caption": "Date String",
+            "doc": "Date time string to parse to date",
+            "editor": "DynamicValue",
+            "name": "datestring",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAE": {
+            "caption": "Date Order",
+            "default_val": "year month day",
+            "doc": "Order of the date parts",
+            "editor": "Dropdown",
+            "name": "dateorder",
+            "options": "year month day,year day month,month year day,month day year,day year month,day month year",
+            "rank": 3
+        },
+        "AAF": {
+            "caption": "Date Delimited",
+            "default_val": true,
+            "doc": "Date parts are delimited by any non-numeric characters",
+            "editor": "Checkbox",
+            "name": "datedelimited",
+            "rank": 4
+        },
+        "AAG": {
+            "caption": "Time Delimited",
+            "default_val": true,
+            "doc": "Time parts are delimited by any non-numeric character",
+            "editor": "Checkbox",
+            "name": "timedelimited",
+            "rank": 5
+        },
+        "AAH": {
+            "caption": "Time Zone",
+            "default_val": "UTC",
+            "doc": "IANA timezone name",
+            "editor": "DynamicValue",
+            "name": "timezone",
+            "optional": false,
+            "rank": 2,
+            "value": "text"
+        },
+        "AAI": {
+            "caption": "Format Override",
+            "doc": "Custom format model, overrides the order and delimiter fields when specified",
+            "editor": "DynamicValue",
+            "name": "formatoverride",
+            "optional": true,
+            "rank": 6,
+            "value": "text"
+        },
+        "AAV": {
+            "caption": "Parse the supplied date time string in the chosen timezone. Returns a proper date and UNIX milliseconds.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAJ": {
+            "caption": "Date Time",
+            "name": "datetime",
+            "rank": 0,
+            "value": "date"
+        },
+        "AAK": {
+            "caption": "UTC Milliseconds",
+            "name": "utcmilliseconds",
+            "rank": 1,
+            "value": "number"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

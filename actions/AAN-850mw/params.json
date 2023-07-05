@@ -1,0 +1,32 @@
+{
+    "category": "plugins",
+    "display": "Time Zones in Country",
+    "fields": {
+        "AAO": {
+            "caption": "Country",
+            "doc": "IANA country code",
+            "editor": "DynamicValue",
+            "is_list": false,
+            "name": "country",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAX": {
+            "caption": "List all the timezones for specific country in the IANA dataset.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAP": {
+            "caption": "Names",
+            "is_list": true,
+            "name": "names",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}

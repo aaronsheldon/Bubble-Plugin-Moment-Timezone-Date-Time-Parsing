@@ -1,0 +1,45 @@
+{
+    "category": "plugins",
+    "display": "Time Zone Properties",
+    "fields": {
+        "AAR": {
+            "caption": "Name",
+            "doc": "IANA timezone name",
+            "editor": "DynamicValue",
+            "name": "name",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAY": {
+            "caption": "Retrieve the metadata of specific timezone from the IANA dataset.",
+            "editor": "Label",
+            "name": "information",
+            "rank": 0
+        }
+    },
+    "return_value": {
+        "AAS": {
+            "caption": "Abbreviations",
+            "is_list": true,
+            "name": "abbreviations",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAT": {
+            "caption": "Millisecond Untils",
+            "is_list": true,
+            "name": "milliseconduntils",
+            "rank": 1,
+            "value": "number"
+        },
+        "AAU": {
+            "caption": "Minute Offsets",
+            "is_list": true,
+            "name": "minuteoffsets",
+            "rank": 2,
+            "value": "number"
+        }
+    },
+    "type": "server_side",
+    "use_packages": true
+}
