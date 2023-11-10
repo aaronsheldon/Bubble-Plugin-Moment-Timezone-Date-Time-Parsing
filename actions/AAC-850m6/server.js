@@ -1,4 +1,4 @@
-function(properties, context) {
+async function(properties, context) {
 	var tzutil = require("moment-timezone");
     var formatmodel = properties.formatoverride;
     var datestring = properties.datestring;

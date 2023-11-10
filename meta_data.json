@@ -13,5 +13,5 @@
     "link": "https://momentjs.com/timezone/",
     "name": "Moment Timezone Date Time Parsing",
     "plugin_instructions": "Each Server Side Action exposes a function from the Moment Timezone Node.js module.\n\n\"Parse Date Time String\" accepts a dynamic date time string, and a dynamic IANA timezone name string. The function parses the date time string using the static options, or when specified the dynamic format model string. On completion it returns a JavaScript Date object and the UTC Milliseconds of the date. Returns nulls If the date time string could not be parsed or the timezone name was invalid.\n\n\"Time Zone Names\" returns a list of all IANA timezone names available in the Moment Timezone module.\n\n\"Time Zones in Country\" accepts a dynamic IANA country code and returns a list of all IANA timezone names available for that country in the Moment Timezone module. Returns null if the country code is invalid.\n\n\"Time Zone Properties\" accepts a dynamic IANA timezone name and returns lists of the timezone abbreviations, the offsets in minutes, and the start boundaries of applicability of the offsets and abbreviations in UTC milliseconds.",
-    "sa_node_version": 14
+    "sa_node_version": 18
 }
